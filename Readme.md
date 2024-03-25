@@ -1,0 +1,1 @@
+Plugin for bevy game engine that adds realistic weapon simulation
