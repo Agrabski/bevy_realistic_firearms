@@ -1,3 +1,7 @@
+pub mod fire_control;
+
+use std::default;
+
 use bevy::prelude::*;
 
 pub struct RealisticFirearmsPlugin {}
@@ -7,3 +11,12 @@ impl Plugin for RealisticFirearmsPlugin {
         todo!()
     }
 }
+
+#[derive(Reflect, Default, Debug)]
+pub struct Round {}
+
+#[derive(Component, Default, Debug, Reflect)]
+pub struct Chamber {
+    content: Option<Round>,
+}
+
