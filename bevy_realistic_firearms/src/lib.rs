@@ -1,4 +1,5 @@
 pub mod fire_control;
+pub mod bolt_mechanism;
 
 use std::default;
 
